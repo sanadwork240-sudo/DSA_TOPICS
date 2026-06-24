@@ -10,7 +10,7 @@ This repository contains my solutions to Data Structures and Algorithms problems
 - Prepare for coding interviews / placements
 - Master core DSA concepts and patterns
 
-## 🛠 Languages Used
+##  Languages Used
 - C++
 
 
