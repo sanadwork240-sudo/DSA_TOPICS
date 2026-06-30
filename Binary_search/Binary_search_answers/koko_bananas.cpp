@@ -1,5 +1,8 @@
-class Solution {
-public:
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
 int func(vector<int> &nums, int hour){
     int totalh=0;
     for(int i=0;i<nums.size();i++){
@@ -48,4 +51,3 @@ int ans = -1;
 
         return ans;
     }
-};
