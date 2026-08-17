@@ -1,0 +1,27 @@
+done  
+
+Write a recursive function to calculate the factorial of n.
+Write a recursive function to find the sum of numbers from 1 to n.
+Write a recursive function to print numbers from 1 to n.
+Write a recursive function to print numbers from n down to 1.
+Write a recursive function to calculate aⁿ.
+Write a recursive function to check whether a string is a palindrome.
+Example: "madam" → true
+Write a recursive function to find the nth Fibonacci number.
+Write a recursive function to find the sum of digits of a number.
+Example: 1234 → 10
+
+Write a recursive function to binary search an array.
+
+
+
+ REMAINING
+
+Write a recursive function to reverse a number.
+Generate all subsets of a string recursively.
+Example: "ab" → "", "a", "b", "ab"
+Generate all permutations of a string.
+Example: "abc" → abc, acb, bac, bca, cab, cba
+Solve the Tower of Hanoi problem recursively.
+
+Best order to practice: 1 → 2 → 3 → 6 → 8 → 9 → 10 → 11 → 13 → 14 → 15.
