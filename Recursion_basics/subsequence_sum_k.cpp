@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void func(int i, vector<int>& ds,int target,int sum int n, int arr[]) {
+void func(int i, vector<int>& ds,int target,int sum ,int n, int a[]) {
 
     // Base case
     if (i == n) {
-        if(sum==k){ 
+        if(sum==target){ 
             for (auto it : ds) {
             cout << it << " ";
         }
@@ -16,16 +16,16 @@ void func(int i, vector<int>& ds,int target,int sum int n, int arr[]) {
     }
 
     // Take
-    ds.push_back(arr[i]);
+    ds.push_back(a[i]);
     sum+=a[i];
-    func(i + 1, ds,target,sum, n, arr);
+    func(i + 1, ds,target,sum, n, a);
 
     // Backtrack
     sum-=a[i];
     ds.pop_back();
 
     // Not take
-    func(i + 1, ds,target,sum, n, arr);
+    func(i + 1, ds,target,sum, n, a);
 }
 
 int main() {
