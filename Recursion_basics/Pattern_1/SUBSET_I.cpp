@@ -15,6 +15,7 @@ public:
         // Do not pick the element
         func(ind + 1, sum, arr, N, sumSubset);
     }
+    // pattern 2
 
 public:
     vector<int> subsetSums(vector<int> arr, int N) {
