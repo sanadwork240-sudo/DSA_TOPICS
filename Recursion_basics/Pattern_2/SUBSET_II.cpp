@@ -26,8 +26,8 @@ private:
         for (int i = ind; i < nums.size(); i++) {
 
             // Skip duplicates at the same recursion level
-            if (i != ind && nums[i] == nums[i - 1])
-                continue;
+            if (i>ind && nums[i] == nums[i - 1])
+                continue;  
 
             ds.push_back(nums[i]);
 
