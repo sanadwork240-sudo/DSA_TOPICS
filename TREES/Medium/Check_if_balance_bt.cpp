@@ -1,0 +1,1 @@
+//  one of the best soliution of doing is to brutly is to do it likt this ki for every node check the lh , rh if at any pont the difference is >1 return false and if not the call the recursive function for the leff and the right nodes 
