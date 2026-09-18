@@ -9,4 +9,24 @@
 // For each node, calculate the total path sum by adding the current node's value and the sums from both its left and right branches.
 // Update the tracked maximum path sum if this total is larger than what we had before.
 // Return the best one-sided path (either left or right plus the current node) to be used in calculations above in the recursion.
-   
+int maxi = INT_MIN;
+
+int func(TreeNode* root) {
+    if (root == NULL)
+        return 0;
+
+    int lh = max(0, func(root->left));
+    int rh = max(0, func(root->right));
+
+    // Path passing through current node
+    maxi = max(maxi, lh + root->val + rh);
+
+    // Maximum path that can be extended to parent
+    return root->val + max(lh, rh);
+}
+
+int maxPathSum(TreeNode* root) {
+    func(root);
+    return maxi;
+}
+tc o(n),sc =o(n)

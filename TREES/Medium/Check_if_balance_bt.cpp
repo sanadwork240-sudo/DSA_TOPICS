@@ -24,6 +24,7 @@
 //  optimal solution the uppr brute force solution is taking the n square of the tc because the lh and rh are being calculated again and again for every node 
 
  func(root){
+
     if (!root)return 0;
     lh=func(root->left);
     if(lh==-1)return -1;
@@ -34,6 +35,8 @@
     if(abs(lh-rh)>1)return -1;
 
     return 1+max(lh,rh);
-
  }
+ bool isBalanced(TreeNode* root) {
+    return func(root) != -1;
+}
 
